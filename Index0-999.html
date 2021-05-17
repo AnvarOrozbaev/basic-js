@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //var n = Math.floor(Math.random()*1000)
+
+
+        var n, obj;
+        n = +prompt('Введите число от 0 до 999');
+        obj = {};
+        function f(n) {
+            if (0 > n || n > 999) {
+                // alert('Вы ввели некоректное число');
+                obj = null;
+                console.log('Вы ввели некоректное число ' + obj);
+
+            } else {
+                obj.hundred = parseInt(n / 100);
+                obj.ten = Math.floor(n / 10 % 10);
+                obj.units = n - parseInt(n / 100) * 100 - Math.floor(n / 10 % 10) * 10;
+                console.log(n + "\n сотни: " + obj.hundred + " десятки: " + obj.ten + " еденицы: " + obj.units);
+            }
+            return obj;
+        }
+
+
+        f(n);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
