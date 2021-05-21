@@ -2,8 +2,8 @@ function chessBoard(b){
 var table, td, tr, th;
 table = document.createElement('table');
 table.style.borderSpacing = "0";
-table.style.borderCollapse = "collapse"
-table.style.border = "1px solid black"
+table.style.borderCollapse = "collapse";
+table.style.border = "1px solid black";
 document.querySelector(b).append(table);
 for(var i = 0;i < 10;i++){
     
