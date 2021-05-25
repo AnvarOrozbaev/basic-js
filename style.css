@@ -1,0 +1,46 @@
+.small__inner{
+    display: flex;
+    justify-content: space-around;
+   
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.small__img{
+    max-width: 20%;
+   max-height: 250px;
+}
+.big__inner{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+}
+.arrow__left{
+position: absolute;
+left: 0;
+text-align: center;
+
+}
+.arrow__right{
+position: absolute;
+right: 0;
+text-align: center;
+
+}
+.big__img{
+display: none;
+}
+.big__img--active {
+    display: block;
+}
+.catalog__inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card__item{
+    border: 1px solid ;
+}
